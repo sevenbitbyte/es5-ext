@@ -4,7 +4,7 @@ var pad      = require("../../string/_hash_/pad")
   , toPosInt = require("../to-pos-integer")
   , toFixed  = Number.prototype.toFixed;
 
-module.exports = function (length/*, precision*/) {
+module.exports = function (length /*, precision*/) {
 	var precision;
 	length = toPosInt(length);
 	precision = toPosInt(arguments[1]);
