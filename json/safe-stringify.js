@@ -1,6 +1,6 @@
 "use strict";
 
-var compact   = require("../array/#/compact")
+var compact   = require("../array/_hash_/compact")
   , isObject  = require("../object/is-object")
   , toArray   = require("../object/to-array")
   , isArray   = Array.isArray

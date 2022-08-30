@@ -1,6 +1,6 @@
 "use strict";
 
-var repeat = require("../string/#/repeat");
+var repeat = require("../string/_hash_/repeat");
 
 module.exports = function (t, a) {
 	a(t(), "undefined");

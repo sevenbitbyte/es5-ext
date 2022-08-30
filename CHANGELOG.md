@@ -275,7 +275,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-- support arrow functions in Function/#/to-tring-tokens.js ([ad3de1e](https://github.com/medikoo/es5-ext/commit/ad3de1e))
+- support arrow functions in Function/_hash_/to-tring-tokens.js ([ad3de1e](https://github.com/medikoo/es5-ext/commit/ad3de1e))
 
 <a name="0.10.20"></a>
 

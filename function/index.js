@@ -3,7 +3,7 @@
 "use strict";
 
 module.exports = {
-	"#": require("./#"),
+	"#": require("./_hash_"),
 	"constant": require("./constant"),
 	"identity": require("./identity"),
 	"invoke": require("./invoke"),

@@ -1,3 +1,3 @@
 "use strict";
 
-module.exports = require("./_iterate")(require("../array/#/find"), false);
+module.exports = require("./_iterate")(require("../array/_hash_/find"), false);

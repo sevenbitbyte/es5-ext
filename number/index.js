@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-	"#": require("./#"),
+	"#": require("./_hash_"),
 	"EPSILON": require("./epsilon"),
 	"isFinite": require("./is-finite"),
 	"isInteger": require("./is-integer"),

@@ -105,7 +105,7 @@ Major update:
   shims accompanied with functions through which (optionally) they can be
   implementend on native objects
 - Filename convention was changed to shorter and strictly lower case names. e.g.
-  `lib/String/prototype/starts-with` became `string/#/starts-with`
+  `lib/String/prototype/starts-with` became `string/_hash_/starts-with`
 - Generated functions are guaranteed to have expected length
 - Objects with null prototype (created via `Object.create(null)`) are widely
   supported (older version have crashed due to implied `obj.hasOwnProperty` and

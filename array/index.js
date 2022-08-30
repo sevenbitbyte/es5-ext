@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-	"#": require("./#"),
+	"#": require("./_hash_"),
 	"from": require("./from"),
 	"generate": require("./generate"),
 	"isPlainArray": require("./is-plain-array"),

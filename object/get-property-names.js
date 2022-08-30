@@ -1,6 +1,6 @@
 "use strict";
 
-var uniq                = require("../array/#/uniq")
+var uniq                = require("../array/_hash_/uniq")
   , value               = require("./valid-value")
   , push                = Array.prototype.push
   , getOwnPropertyNames = Object.getOwnPropertyNames

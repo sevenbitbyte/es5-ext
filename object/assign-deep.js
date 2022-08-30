@@ -1,7 +1,7 @@
 "use strict";
 
-var includes      = require("../array/#/contains")
-  , uniq          = require("../array/#/uniq")
+var includes      = require("../array/_hash_/contains")
+  , uniq          = require("../array/_hash_/uniq")
   , copyDeep      = require("./copy-deep")
   , objForEach    = require("./for-each")
   , isPlainObject = require("./is-plain-object")

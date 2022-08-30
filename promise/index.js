@@ -1,3 +1,3 @@
 "use strict";
 
-module.exports = { "#": require("./#"), "lazy": require("./lazy") };
+module.exports = { "#": require("./_hash_"), "lazy": require("./lazy") };

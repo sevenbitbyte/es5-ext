@@ -52,19 +52,19 @@ It's about properties introduced with ES6 and those that have been updated in ne
 
 - `Array.from` -> `require('es5-ext/array/from')`
 - `Array.of` -> `require('es5-ext/array/of')`
-- `Array.prototype.concat` -> `require('es5-ext/array/#/concat')`
-- `Array.prototype.copyWithin` -> `require('es5-ext/array/#/copy-within')`
-- `Array.prototype.entries` -> `require('es5-ext/array/#/entries')`
-- `Array.prototype.fill` -> `require('es5-ext/array/#/fill')`
-- `Array.prototype.filter` -> `require('es5-ext/array/#/filter')`
-- `Array.prototype.find` -> `require('es5-ext/array/#/find')`
-- `Array.prototype.findIndex` -> `require('es5-ext/array/#/find-index')`
-- `Array.prototype.keys` -> `require('es5-ext/array/#/keys')`
-- `Array.prototype.map` -> `require('es5-ext/array/#/map')`
-- `Array.prototype.slice` -> `require('es5-ext/array/#/slice')`
-- `Array.prototype.splice` -> `require('es5-ext/array/#/splice')`
-- `Array.prototype.values` -> `require('es5-ext/array/#/values')`
-- `Array.prototype[@@iterator]` -> `require('es5-ext/array/#/@@iterator')`
+- `Array.prototype.concat` -> `require('es5-ext/array/_hash_/concat')`
+- `Array.prototype.copyWithin` -> `require('es5-ext/array/_hash_/copy-within')`
+- `Array.prototype.entries` -> `require('es5-ext/array/_hash_/entries')`
+- `Array.prototype.fill` -> `require('es5-ext/array/_hash_/fill')`
+- `Array.prototype.filter` -> `require('es5-ext/array/_hash_/filter')`
+- `Array.prototype.find` -> `require('es5-ext/array/_hash_/find')`
+- `Array.prototype.findIndex` -> `require('es5-ext/array/_hash_/find-index')`
+- `Array.prototype.keys` -> `require('es5-ext/array/_hash_/keys')`
+- `Array.prototype.map` -> `require('es5-ext/array/_hash_/map')`
+- `Array.prototype.slice` -> `require('es5-ext/array/_hash_/slice')`
+- `Array.prototype.splice` -> `require('es5-ext/array/_hash_/splice')`
+- `Array.prototype.values` -> `require('es5-ext/array/_hash_/values')`
+- `Array.prototype[@@iterator]` -> `require('es5-ext/array/_hash_/@@iterator')`
 - `Math.acosh` -> `require('es5-ext/math/acosh')`
 - `Math.asinh` -> `require('es5-ext/math/asinh')`
 - `Math.atanh` -> `require('es5-ext/math/atanh')`
@@ -92,22 +92,22 @@ It's about properties introduced with ES6 and those that have been updated in ne
 - `Object.assign` -> `require('es5-ext/object/assign')`
 - `Object.keys` -> `require('es5-ext/object/keys')`
 - `Object.setPrototypeOf` -> `require('es5-ext/object/set-prototype-of')`
-- `Promise.prototype.finally` -> `require('es5-ext/promise/#/finally')`
-- `RegExp.prototype.match` -> `require('es5-ext/reg-exp/#/match')`
-- `RegExp.prototype.replace` -> `require('es5-ext/reg-exp/#/replace')`
-- `RegExp.prototype.search` -> `require('es5-ext/reg-exp/#/search')`
-- `RegExp.prototype.split` -> `require('es5-ext/reg-exp/#/split')`
-- `RegExp.prototype.sticky` -> Implement with `require('es5-ext/reg-exp/#/sticky/implement')`, use as function with `require('es5-ext/reg-exp/#/is-sticky')`
-- `RegExp.prototype.unicode` -> Implement with `require('es5-ext/reg-exp/#/unicode/implement')`, use as function with `require('es5-ext/reg-exp/#/is-unicode')`
+- `Promise.prototype.finally` -> `require('es5-ext/promise/_hash_/finally')`
+- `RegExp.prototype.match` -> `require('es5-ext/reg-exp/_hash_/match')`
+- `RegExp.prototype.replace` -> `require('es5-ext/reg-exp/_hash_/replace')`
+- `RegExp.prototype.search` -> `require('es5-ext/reg-exp/_hash_/search')`
+- `RegExp.prototype.split` -> `require('es5-ext/reg-exp/_hash_/split')`
+- `RegExp.prototype.sticky` -> Implement with `require('es5-ext/reg-exp/_hash_/sticky/implement')`, use as function with `require('es5-ext/reg-exp/_hash_/is-sticky')`
+- `RegExp.prototype.unicode` -> Implement with `require('es5-ext/reg-exp/_hash_/unicode/implement')`, use as function with `require('es5-ext/reg-exp/_hash_/is-unicode')`
 - `String.fromCodePoint` -> `require('es5-ext/string/from-code-point')`
 - `String.raw` -> `require('es5-ext/string/raw')`
-- `String.prototype.codePointAt` -> `require('es5-ext/string/#/code-point-at')`
-- `String.prototype.contains` -> `require('es5-ext/string/#/contains')`
-- `String.prototype.endsWith` -> `require('es5-ext/string/#/ends-with')`
-- `String.prototype.normalize` -> `require('es5-ext/string/#/normalize')`
-- `String.prototype.repeat` -> `require('es5-ext/string/#/repeat')`
-- `String.prototype.startsWith` -> `require('es5-ext/string/#/starts-with')`
-- `String.prototype[@@iterator]` -> `require('es5-ext/string/#/@@iterator')`
+- `String.prototype.codePointAt` -> `require('es5-ext/string/_hash_/code-point-at')`
+- `String.prototype.contains` -> `require('es5-ext/string/_hash_/contains')`
+- `String.prototype.endsWith` -> `require('es5-ext/string/_hash_/ends-with')`
+- `String.prototype.normalize` -> `require('es5-ext/string/_hash_/normalize')`
+- `String.prototype.repeat` -> `require('es5-ext/string/_hash_/repeat')`
+- `String.prototype.startsWith` -> `require('es5-ext/string/_hash_/starts-with')`
+- `String.prototype[@@iterator]` -> `require('es5-ext/string/_hash_/@@iterator')`
 
 #### Non ECMAScript standard features
 
@@ -115,19 +115,19 @@ It's about properties introduced with ES6 and those that have been updated in ne
 
 ```javascript
 Object.defineProperty(Function.prototype, "partial", {
-  value: require("es5-ext/function/#/partial"),
+  value: require("es5-ext/function/_hash_/partial"),
   configurable: true,
   enumerable: false,
   writable: true
 });
 Object.defineProperty(Array.prototype, "flatten", {
-  value: require("es5-ext/array/#/flatten"),
+  value: require("es5-ext/array/_hash_/flatten"),
   configurable: true,
   enumerable: false,
   writable: true
 });
 Object.defineProperty(String.prototype, "capitalize", {
-  value: require("es5-ext/string/#/capitalize"),
+  value: require("es5-ext/string/_hash_/capitalize"),
   configurable: true,
   enumerable: false,
   writable: true
@@ -141,7 +141,7 @@ See [es5-extend](https://github.com/wookieb/es5-extend#es5-extend), a great util
 When you're in situation when native extensions are not good idea, then you should use methods indirectly:
 
 ```javascript
-var flatten = require("es5-ext/array/#/flatten");
+var flatten = require("es5-ext/array/_hash_/flatten");
 
 flatten.call([1, [2, [3, 4]]]); // [1, 2, 3, 4]
 ```
@@ -150,7 +150,7 @@ for better convenience you can turn methods into functions:
 
 ```javascript
 var call = Function.prototype.call;
-var flatten = call.bind(require("es5-ext/array/#/flatten"));
+var flatten = call.bind(require("es5-ext/array/_hash_/flatten"));
 
 flatten([1, [2, [3, 4]]]); // [1, 2, 3, 4]
 ```
@@ -159,9 +159,9 @@ You can configure custom toolkit (like [underscorejs](http://underscorejs.org/))
 
 ```javascript
 var util = {};
-util.partial = call.bind(require("es5-ext/function/#/partial"));
-util.flatten = call.bind(require("es5-ext/array/#/flatten"));
-util.startsWith = call.bind(require("es5-ext/string/#/starts-with"));
+util.partial = call.bind(require("es5-ext/function/_hash_/partial"));
+util.flatten = call.bind(require("es5-ext/array/_hash_/flatten"));
+util.startsWith = call.bind(require("es5-ext/string/_hash_/starts-with"));
 
 util.flatten([1, [2, [3, 4]]]); // [1, 2, 3, 4]
 ```
@@ -206,158 +206,158 @@ Returns `obj` if it's an array, otherwise throws `TypeError`
 
 ### Array Prototype extensions
 
-#### arr.binarySearch(compareFn) _(es5-ext/array/#/binary-search)_
+#### arr.binarySearch(compareFn) _(es5-ext/array/_hash_/binary-search)_
 
 In **sorted** list search for index of item for which _compareFn_ returns value closest to _0_.
 It's variant of binary search algorithm
 
-#### arr.clear() _(es5-ext/array/#/clear)_
+#### arr.clear() _(es5-ext/array/_hash_/clear)_
 
 Clears the array
 
-#### arr.compact() _(es5-ext/array/#/compact)_
+#### arr.compact() _(es5-ext/array/_hash_/compact)_
 
 Returns a copy of the context with all non-values (`null` or `undefined`) removed.
 
-#### arr.concat() _(es5-ext/array/#/concat)_
+#### arr.concat() _(es5-ext/array/_hash_/concat)_
 
 [_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype.concat).
 ES6's version of `concat`. Supports `isConcatSpreadable` symbol, and returns array of same type as the context.
 
-#### arr.contains(searchElement[, position]) _(es5-ext/array/#/contains)_
+#### arr.contains(searchElement[, position]) _(es5-ext/array/_hash_/contains)_
 
 Whether list contains the given value.
 
-#### arr.copyWithin(target, start[, end]) _(es5-ext/array/#/copy-within)_
+#### arr.copyWithin(target, start[, end]) _(es5-ext/array/_hash_/copy-within)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.copywithin).
 
-#### arr.diff(other) _(es5-ext/array/#/diff)_
+#### arr.diff(other) _(es5-ext/array/_hash_/diff)_
 
 Returns the array of elements that are present in context list but not present in other list.
 
-#### arr.eIndexOf(searchElement[, fromIndex]) _(es5-ext/array/#/e-index-of)_
+#### arr.eIndexOf(searchElement[, fromIndex]) _(es5-ext/array/_hash_/e-index-of)_
 
 _egal_ version of `indexOf` method. [_SameValueZero_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero) logic is used for comparision
 
-#### arr.eLastIndexOf(searchElement[, fromIndex]) _(es5-ext/array/#/e-last-index-of)_
+#### arr.eLastIndexOf(searchElement[, fromIndex]) _(es5-ext/array/_hash_/e-last-index-of)_
 
 _egal_ version of `lastIndexOf` method. [_SameValueZero_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero) logic is used for comparision
 
-#### arr.entries() _(es5-ext/array/#/entries)_
+#### arr.entries() _(es5-ext/array/_hash_/entries)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype.entries).
 Returns iterator object, which traverses the array. Each value is represented with an array, where first value is an index and second is corresponding to index value.
 
-#### arr.exclusion([…lists]]) _(es5-ext/array/#/exclusion)_
+#### arr.exclusion([…lists]]) _(es5-ext/array/_hash_/exclusion)_
 
 Returns the array of elements that are found only in one of the lists (either context list or list provided in arguments).
 
-#### arr.fill(value[, start, end]) _(es5-ext/array/#/fill)_
+#### arr.fill(value[, start, end]) _(es5-ext/array/_hash_/fill)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.fill).
 
-#### arr.filter(callback[, thisArg]) _(es5-ext/array/#/filter)_
+#### arr.filter(callback[, thisArg]) _(es5-ext/array/_hash_/filter)_
 
 [_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.filter).
 ES6's version of `filter`, returns array of same type as the context.
 
-#### arr.find(predicate[, thisArg]) _(es5-ext/array/#/find)_
+#### arr.find(predicate[, thisArg]) _(es5-ext/array/_hash_/find)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.find).
 Return first element for which given function returns true
 
-#### arr.findIndex(predicate[, thisArg]) _(es5-ext/array/#/find-index)_
+#### arr.findIndex(predicate[, thisArg]) _(es5-ext/array/_hash_/find-index)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.findindex).
 Return first index for which given function returns true
 
-#### arr.first() _(es5-ext/array/#/first)_
+#### arr.first() _(es5-ext/array/_hash_/first)_
 
 Returns value for first defined index
 
-#### arr.firstIndex() _(es5-ext/array/#/first-index)_
+#### arr.firstIndex() _(es5-ext/array/_hash_/first-index)_
 
 Returns first declared index of the array
 
-#### arr.flatten() _(es5-ext/array/#/flatten)_
+#### arr.flatten() _(es5-ext/array/_hash_/flatten)_
 
 Returns flattened version of the array
 
-#### arr.forEachRight(cb[, thisArg]) _(es5-ext/array/#/for-each-right)_
+#### arr.forEachRight(cb[, thisArg]) _(es5-ext/array/_hash_/for-each-right)_
 
 `forEach` starting from last element
 
-#### arr.group(cb[, thisArg]) _(es5-ext/array/#/group)_
+#### arr.group(cb[, thisArg]) _(es5-ext/array/_hash_/group)_
 
 Group list elements by value returned by _cb_ function
 
-#### arr.indexesOf(searchElement[, fromIndex]) _(es5-ext/array/#/indexes-of)_
+#### arr.indexesOf(searchElement[, fromIndex]) _(es5-ext/array/_hash_/indexes-of)_
 
 Returns array of all indexes of given value
 
-#### arr.intersection([…lists]) _(es5-ext/array/#/intersection)_
+#### arr.intersection([…lists]) _(es5-ext/array/_hash_/intersection)_
 
 Computes the array of values that are the intersection of all lists (context list and lists given in arguments)
 
-#### arr.isCopy(other) _(es5-ext/array/#/is-copy)_
+#### arr.isCopy(other) _(es5-ext/array/_hash_/is-copy)_
 
 Returns true if both context and _other_ lists have same content
 
-#### arr.isUniq() _(es5-ext/array/#/is-uniq)_
+#### arr.isUniq() _(es5-ext/array/_hash_/is-uniq)_
 
 Returns true if all values in array are unique
 
-#### arr.keys() _(es5-ext/array/#/keys)_
+#### arr.keys() _(es5-ext/array/_hash_/keys)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype.keys).
 Returns iterator object, which traverses all array indexes.
 
-#### arr.last() _(es5-ext/array/#/last)_
+#### arr.last() _(es5-ext/array/_hash_/last)_
 
 Returns value of last defined index
 
-#### arr.lastIndex() _(es5-ext/array/#/last)_
+#### arr.lastIndex() _(es5-ext/array/_hash_/last)_
 
 Returns last defined index of the array
 
-#### arr.map(callback[, thisArg]) _(es5-ext/array/#/map)_
+#### arr.map(callback[, thisArg]) _(es5-ext/array/_hash_/map)_
 
 [_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.map).
 ES6's version of `map`, returns array of same type as the context.
 
-#### arr.remove(value[, …valuen]) _(es5-ext/array/#/remove)_
+#### arr.remove(value[, …valuen]) _(es5-ext/array/_hash_/remove)_
 
 Remove values from the array
 
-#### arr.separate(sep) _(es5-ext/array/#/separate)_
+#### arr.separate(sep) _(es5-ext/array/_hash_/separate)_
 
 Returns array with items separated with `sep` value
 
-#### arr.slice(callback[, thisArg]) _(es5-ext/array/#/slice)_
+#### arr.slice(callback[, thisArg]) _(es5-ext/array/_hash_/slice)_
 
 [_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.slice).
 ES6's version of `slice`, returns array of same type as the context.
 
-#### arr.someRight(cb[, thisArg]) _(es5-ext/array/#/someRight)_
+#### arr.someRight(cb[, thisArg]) _(es5-ext/array/_hash_/someRight)_
 
 `some` starting from last element
 
-#### arr.splice(callback[, thisArg]) _(es5-ext/array/#/splice)_
+#### arr.splice(callback[, thisArg]) _(es5-ext/array/_hash_/splice)_
 
 [_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.splice).
 ES6's version of `splice`, returns array of same type as the context.
 
-#### arr.uniq() _(es5-ext/array/#/uniq)_
+#### arr.uniq() _(es5-ext/array/_hash_/uniq)_
 
 Returns duplicate-free version of the array
 
-#### arr.values() _(es5-ext/array/#/values)_
+#### arr.values() _(es5-ext/array/_hash_/values)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype.values).
 Returns iterator object which traverses all array values.
 
-#### arr[@@iterator] _(es5-ext/array/#/@@iterator)_
+#### arr[@@iterator] _(es5-ext/array/_hash_/@@iterator)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype-@@iterator).
 Returns iterator object which traverses all array values.
@@ -380,27 +380,27 @@ If given object is not date throw TypeError in other case return it.
 
 ### Date Prototype extensions
 
-#### date.copy(date) _(es5-ext/date/#/copy)_
+#### date.copy(date) _(es5-ext/date/_hash_/copy)_
 
 Returns a copy of the date object
 
-#### date.daysInMonth() _(es5-ext/date/#/days-in-month)_
+#### date.daysInMonth() _(es5-ext/date/_hash_/days-in-month)_
 
 Returns number of days of date's month
 
-#### date.floorDay() _(es5-ext/date/#/floor-day)_
+#### date.floorDay() _(es5-ext/date/_hash_/floor-day)_
 
 Sets the date time to 00:00:00.000
 
-#### date.floorMonth() _(es5-ext/date/#/floor-month)_
+#### date.floorMonth() _(es5-ext/date/_hash_/floor-month)_
 
 Sets date day to 1 and date time to 00:00:00.000
 
-#### date.floorYear() _(es5-ext/date/#/floor-year)_
+#### date.floorYear() _(es5-ext/date/_hash_/floor-year)_
 
 Sets date month to 0, day to 1 and date time to 00:00:00.000
 
-#### date.format(pattern) _(es5-ext/date/#/format)_
+#### date.format(pattern) _(es5-ext/date/_hash_/format)_
 
 Formats date up to given string. Supported patterns:
 
@@ -429,7 +429,7 @@ If given object is not error throw TypeError in other case return it.
 
 ### Error Prototype extensions
 
-#### err.throw() _(es5-ext/error/#/throw)_
+#### err.throw() _(es5-ext/error/_hash_/throw)_
 
 Throws error
 
@@ -484,7 +484,7 @@ If given object is not function throw TypeError in other case return it.
 
 Some of the methods were inspired by [Functional JavaScript](http://osteele.com/sources/javascript/functional/) project by Olivier Steele
 
-#### fn.compose([…fns]) _(es5-ext/function/#/compose)_
+#### fn.compose([…fns]) _(es5-ext/function/_hash_/compose)_
 
 Applies the functions in reverse argument-list order.
 
@@ -494,18 +494,18 @@ _f1.compose(f2, f3, f4)(…args) =def f1(f2(f3(f4(…arg))))_
 
 _compose(f1, f2, f3, f4)(…args) =def f1(f2(f3(f4(…arg))))_
 
-#### fn.copy() _(es5-ext/function/#/copy)_
+#### fn.copy() _(es5-ext/function/_hash_/copy)_
 
 Produces copy of given function
 
-#### fn.curry([n]) _(es5-ext/function/#/curry)_
+#### fn.curry([n]) _(es5-ext/function/_hash_/curry)_
 
 Invoking the function returned by this function only _n_ arguments are passed to the underlying function. If the underlying function is not saturated, the result is a function that passes all its arguments to the underlying function.
 If _n_ is not provided then it defaults to context function length
 
 _f.curry(4)(arg1, arg2)(arg3)(arg4) =def f(arg1, args2, arg3, arg4)_
 
-#### fn.lock([…args]) _(es5-ext/function/#/lock)_
+#### fn.lock([…args]) _(es5-ext/function/_hash_/lock)_
 
 Returns a function that applies the underlying function to _args_, and ignores its own arguments.
 
@@ -513,25 +513,25 @@ _f.lock(…args)(…args2) =def f(…args)_
 
 _Named after it's counterpart in Google Closure_
 
-#### fn.not() _(es5-ext/function/#/not)_
+#### fn.not() _(es5-ext/function/_hash_/not)_
 
 Returns a function that returns boolean negation of value returned by underlying function.
 
 _f.not()(…args) =def !f(…args)_
 
-#### fn.partial([…args]) _(es5-ext/function/#/partial)_
+#### fn.partial([…args]) _(es5-ext/function/_hash_/partial)_
 
 Returns a function that when called will behave like context function called with initially passed arguments. If more arguments are suplilied, they are appended to initial args.
 
 _f.partial(…args1)(…args2) =def f(…args1, …args2)_
 
-#### fn.spread() _(es5-ext/function/#/spread)_
+#### fn.spread() _(es5-ext/function/_hash_/spread)_
 
 Returns a function that applies underlying function with first list argument
 
 _f.match()(args) =def f.apply(null, args)_
 
-#### fn.toStringTokens() _(es5-ext/function/#/to-string-tokens)_
+#### fn.toStringTokens() _(es5-ext/function/_hash_/to-string-tokens)_
 
 Serializes function into two (arguments and body) string tokens. Result is plain object with `args` and `body` properties.
 
@@ -661,7 +661,7 @@ See: http://www.2ality.com/2012/02/js-integers.html
 
 ### Number Prototype extensions
 
-#### num.pad(length[, precision]) _(es5-ext/number/#/pad)_
+#### num.pad(length[, precision]) _(es5-ext/number/_hash_/pad)_
 
 Pad given number with zeros. Returns string
 
@@ -849,7 +849,7 @@ Throws error if given value is `null` or `undefined`, otherwise returns value.
 
 ### Promise Prototype extensions
 
-#### promise.finally(onFinally) _(es5-ext/promise/#/finally)_
+#### promise.finally(onFinally) _(es5-ext/promise/_hash_/finally)_
 
 [_Introduced with ECMAScript 2018_](https://tc39.github.io/ecma262/#sec-promise.prototype.finally).
 
@@ -869,40 +869,40 @@ If object is regular expression it is returned, otherwise TypeError is thrown.
 
 ### RegExp Prototype extensions
 
-#### re.isSticky(x) _(es5-ext/reg-exp/#/is-sticky)_
+#### re.isSticky(x) _(es5-ext/reg-exp/_hash_/is-sticky)_
 
 Whether regular expression has `sticky` flag.
 
 It's to be used as counterpart to [regExp.sticky](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-get-regexp.prototype.sticky) if it's not implemented.
 
-#### re.isUnicode(x) _(es5-ext/reg-exp/#/is-unicode)_
+#### re.isUnicode(x) _(es5-ext/reg-exp/_hash_/is-unicode)_
 
 Whether regular expression has `unicode` flag.
 
 It's to be used as counterpart to [regExp.unicode](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-get-regexp.prototype.unicode) if it's not implemented.
 
-#### re.match(string) _(es5-ext/reg-exp/#/match)_
+#### re.match(string) _(es5-ext/reg-exp/_hash_/match)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-regexp.prototype.match).
 
-#### re.replace(string, replaceValue) _(es5-ext/reg-exp/#/replace)_
+#### re.replace(string, replaceValue) _(es5-ext/reg-exp/_hash_/replace)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-regexp.prototype.replace).
 
-#### re.search(string) _(es5-ext/reg-exp/#/search)_
+#### re.search(string) _(es5-ext/reg-exp/_hash_/search)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-regexp.prototype.search).
 
-#### re.split(string) _(es5-ext/reg-exp/#/search)_
+#### re.split(string) _(es5-ext/reg-exp/_hash_/search)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-regexp.prototype.split).
 
-#### re.sticky _(es5-ext/reg-exp/#/sticky/implement)_
+#### re.sticky _(es5-ext/reg-exp/_hash_/sticky/implement)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-regexp.prototype.sticky).
 It's a getter, so only `implement` and `is-implemented` modules are provided.
 
-#### re.unicode _(es5-ext/reg-exp/#/unicode/implement)_
+#### re.unicode _(es5-ext/reg-exp/_hash_/unicode/implement)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-regexp.prototype.unicode).
 It's a getter, so only `implement` and `is-implemented` modules are provided.
@@ -931,87 +931,87 @@ Returns randomly generated id, with guarantee of local uniqueness (no same id wi
 
 ### String Prototype extensions
 
-#### str.at(pos) _(es5-ext/string/#/at)_
+#### str.at(pos) _(es5-ext/string/_hash_/at)_
 
 _Proposed for ECMAScript 6/7 standard, but not (yet) in a draft_
 
 Returns a string at given position in Unicode-safe manner.
 Based on [implementation by Mathias Bynens](https://github.com/mathiasbynens/String.prototype.at).
 
-#### str.camelToHyphen() _(es5-ext/string/#/camel-to-hyphen)_
+#### str.camelToHyphen() _(es5-ext/string/_hash_/camel-to-hyphen)_
 
 Convert camelCase string to hyphen separated, e.g. one-two-three -> oneTwoThree.
 Useful when converting names from js property convention into filename convention.
 
-#### str.capitalize() _(es5-ext/string/#/capitalize)_
+#### str.capitalize() _(es5-ext/string/_hash_/capitalize)_
 
 Capitalize first character of a string
 
-#### str.caseInsensitiveCompare(str) _(es5-ext/string/#/case-insensitive-compare)_
+#### str.caseInsensitiveCompare(str) _(es5-ext/string/_hash_/case-insensitive-compare)_
 
 Case insensitive compare
 
-#### str.codePointAt(pos) _(es5-ext/string/#/code-point-at)_
+#### str.codePointAt(pos) _(es5-ext/string/_hash_/code-point-at)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.codepointat)
 
 Based on [implementation by Mathias Bynens](https://github.com/mathiasbynens/String.prototype.codePointAt).
 
-#### str.contains(searchString[, position]) _(es5-ext/string/#/contains)_
+#### str.contains(searchString[, position]) _(es5-ext/string/_hash_/contains)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.contains)
 
 Whether string contains given string.
 
-#### str.endsWith(searchString[, endPosition]) _(es5-ext/string/#/ends-with)_
+#### str.endsWith(searchString[, endPosition]) _(es5-ext/string/_hash_/ends-with)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.endswith).
 Whether strings ends with given string
 
-#### str.hyphenToCamel() _(es5-ext/string/#/hyphen-to-camel)_
+#### str.hyphenToCamel() _(es5-ext/string/_hash_/hyphen-to-camel)_
 
 Convert hyphen separated string to camelCase, e.g. one-two-three -> oneTwoThree.
 Useful when converting names from filename convention to js property name convention.
 
-#### str.indent(str[, count]) _(es5-ext/string/#/indent)_
+#### str.indent(str[, count]) _(es5-ext/string/_hash_/indent)_
 
 Indents each line with provided _str_ (if _count_ given then _str_ is repeated _count_ times).
 
-#### str.last() _(es5-ext/string/#/last)_
+#### str.last() _(es5-ext/string/_hash_/last)_
 
 Return last character
 
-#### str.normalize([form]) _(es5-ext/string/#/normalize)_
+#### str.normalize([form]) _(es5-ext/string/_hash_/normalize)_
 
 [_Introduced with ECMAScript 6_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize).
 Returns the Unicode Normalization Form of a given string.
 Based on Matsuza's version. Code used for integrated shim can be found at [github.com/walling/unorm](https://github.com/walling/unorm/blob/master/lib/unorm.js)
 
-#### str.pad(fill[, length]) _(es5-ext/string/#/pad)_
+#### str.pad(fill[, length]) _(es5-ext/string/_hash_/pad)_
 
 Pad string with _fill_.
 If _length_ si given than _fill_ is reapated _length_ times.
 If _length_ is negative then pad is applied from right.
 
-#### str.repeat(n) _(es5-ext/string/#/repeat)_
+#### str.repeat(n) _(es5-ext/string/_hash_/repeat)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.repeat).
 Repeat given string _n_ times
 
-#### str.plainReplace(search, replace) _(es5-ext/string/#/plain-replace)_
+#### str.plainReplace(search, replace) _(es5-ext/string/_hash_/plain-replace)_
 
 Simple `replace` version. Doesn't support regular expressions. Replaces just first occurrence of search string. Doesn't support insert patterns, therefore it is safe to replace text with text obtained programmatically (there's no need for additional _\$_ characters escape in such case).
 
-#### str.plainReplaceAll(search, replace) _(es5-ext/string/#/plain-replace-all)_
+#### str.plainReplaceAll(search, replace) _(es5-ext/string/_hash_/plain-replace-all)_
 
 Simple `replace` version. Doesn't support regular expressions. Replaces all occurrences of search string. Doesn't support insert patterns, therefore it is safe to replace text with text obtained programmatically (there's no need for additional _\$_ characters escape in such case).
 
-#### str.startsWith(searchString[, position]) _(es5-ext/string/#/starts-with)_
+#### str.startsWith(searchString[, position]) _(es5-ext/string/_hash_/starts-with)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype.startswith).
 Whether strings starts with given string
 
-#### str[@@iterator] _(es5-ext/string/#/@@iterator)_
+#### str[@@iterator] _(es5-ext/string/_hash_/@@iterator)_
 
 [_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.prototype-@@iterator).
 Returns iterator object which traverses all string characters (with respect to unicode symbols)
